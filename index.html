@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en-NA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#081a35">
+  <meta name="description" content="NeXora by TwinRise GoldenLink — one connected digital platform for business, services and productivity.">
+  <title>NeXora — One Connected Platform</title>
+  <style>
+    :root{color-scheme:dark;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;background:#07162c;color:#f4f8ff}
+    *{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 78% 18%,#124b7c66,transparent 38%),radial-gradient(ellipse at 12% 85%,#17417a55,transparent 35%),#07162c}
+    a{color:inherit}.wrap{max-width:1120px;margin:auto;padding:28px 6vw 42px}.top{display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:850;letter-spacing:.18em}.mark{display:grid;place-items:center;width:44px;height:44px;border-radius:14px;background:linear-gradient(145deg,#64d7ff,#0879df);color:#06172e;font-size:24px;box-shadow:0 10px 35px #008bff44}
+    .brand small{display:block;font-size:9px;letter-spacing:.22em;color:#8ba9ca;margin-top:3px}.pill{border:1px solid #7ca9d34d;border-radius:999px;padding:9px 14px;color:#b8d5f4;font-size:12px}
+    main{padding:clamp(76px,13vh,140px) 0 80px;max-width:850px}.eyebrow{color:#65ceff;font-size:11px;font-weight:800;letter-spacing:.22em}
+    h1{font-size:clamp(48px,8vw,88px);line-height:.99;letter-spacing:-.065em;margin:22px 0 24px;max-width:850px}
+    h1 span{background:linear-gradient(90deg,#fff,#75d5ff 72%,#5a9dff);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .lead{max-width:650px;color:#afc2dc;font-size:clamp(17px,2vw,20px);line-height:1.75;margin:0 0 34px}
+    .actions{display:flex;flex-wrap:wrap;gap:13px}.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border-radius:12px;padding:15px 21px;font-size:14px;font-weight:750;transition:transform .2s,box-shadow .2s}
+    .btn:hover{transform:translateY(-2px)}.primary{background:linear-gradient(110deg,#38c4ff,#0876e8);color:#03172d;box-shadow:0 12px 35px #0785ed44}.secondary{border:1px solid #6f95bd66;background:#ffffff08;color:#e4f1ff}
+    .features{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:68px}.feature{border:1px solid #7ea4ce2b;background:linear-gradient(145deg,#ffffff0c,#ffffff04);border-radius:16px;padding:19px;min-height:112px}
+    .feature b{display:block;font-size:14px;margin-bottom:8px}.feature small{color:#91a9c7;line-height:1.5}.foot{border-top:1px solid #7ea4ce2b;padding-top:22px;margin-top:54px;display:flex;justify-content:space-between;gap:18px;color:#7892b1;font-size:11px}
+    @media(max-width:680px){.features{grid-template-columns:repeat(2,1fr)}.pill{display:none}.foot{flex-direction:column}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <a class="brand" href="./" aria-label="NeXora home"><span class="mark">N</span><span>NEXORA<small>BY TWINRISE GOLDENLINK</small></span></a>
+      <span class="pill">ONE CONNECTED PLATFORM</span>
+    </header>
+    <main>
+      <div class="eyebrow">BUSINESS. SERVICES. PRODUCTIVITY.</div>
+      <h1>Everything connected.<br><span>One smarter workspace.</span></h1>
+      <p class="lead">NeXora brings business operations and everyday services together in one connected digital experience — designed to make work simpler, clearer and more accessible.</p>
+      <div class="actions">
+        <a class="btn primary" href="https://twinnexora.netlify.app/">Enter NeXora workspace ↗</a>
+        <a class="btn secondary" href="https://github.com/TwinRise-GoldenLink/NeXora">View project repository ↗</a>
+      </div>
+      <section class="features" aria-label="Platform areas">
+        <article class="feature"><b>Business management</b><small>A central view of business activity.</small></article>
+        <article class="feature"><b>Finance</b><small>Organise financial records and workflows.</small></article>
+        <article class="feature"><b>Orders & services</b><small>Bring customer requests into one flow.</small></article>
+        <article class="feature"><b>Secure access</b><small>Authentication powered by Supabase.</small></article>
+      </section>
+    </main>
+    <footer class="foot"><span>© <span id="year"></span> TwinRise GoldenLink · NeXora</span><span>Built for a more connected way to work.</span></footer>
+  </div>
+  <script>document.getElementById("year").textContent=new Date().getFullYear()</script>
+</body>
+</html>
