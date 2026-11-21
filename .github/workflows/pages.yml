@@ -1,4 +1,4 @@
-name: Deploy NeXora site to GitHub Pages
+name: Deploy KANYOME site to GitHub Pages
 
 on:
   push:
@@ -22,7 +22,7 @@ jobs:
         uses: actions/checkout@v4
       - name: Configure Pages
         uses: actions/configure-pages@v5
-      - name: Upload static site
+      - name: Upload KANYOME website
         uses: actions/upload-pages-artifact@v3
         with:
           path: .
